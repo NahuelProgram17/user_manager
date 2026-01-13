@@ -24,4 +24,4 @@ Aplicación desarrollada en Python para la gestión de usuarios, enfocada en val
 
 1. Clonar el repositorio:
 ```bash
-git clone https://github.com/nahuelprogram17/NOMBRE_DEL_REPO.git
+git clone https://github.com/nahuelprogram17/user_manager.git
