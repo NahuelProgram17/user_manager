@@ -1,30 +1,27 @@
-# User Manager 🐍
+# 👤 User Manager en Python
 
-Proyecto simple en Python para la gestión de usuarios desde la consola.
-Pensado como proyecto de práctica con estructura y flujo profesional.
+Aplicación desarrollada en Python para la gestión de usuarios, enfocada en validaciones y buenas prácticas de programación.
 
 ---
 
 ## 🚀 Funcionalidades
-
-- Creación de usuarios
-- Validación de email
+- Crear usuarios
+- Validar email y contraseña
+- Listar usuarios
+- Eliminar usuarios
 - Manejo de errores
-- Tests automáticos con pytest
 
 ---
 
-## 📦 Requisitos
-
-- Python 3.9 o superior
+## 🛠 Tecnologías utilizadas
+- Python 3
+- Programación orientada a objetos (POO)
+- Git & GitHub
 
 ---
 
-## 🔧 Instalación
+## ▶️ Cómo ejecutar el proyecto
 
-Clonar el repositorio y crear el entorno virtual:
-
+1. Clonar el repositorio:
 ```bash
-python -m venv venv
-source venv/bin/activate  # Linux / Mac
-venv\Scripts\activate     # Windows
+git clone https://github.com/nahuelprogram17/NOMBRE_DEL_REPO.git
