@@ -1,21 +1,24 @@
 import json
-from app.user import User
+import os
 
 FILE_PATH = "users.json"
 
-def save_user(user: User):
-    data = {
+
+def load_users():
+    if not os.path.exists(FILE_PATH):
+        return []
+
+    with open(FILE_PATH, "r", encoding="utf-8") as file:
+        return json.load(file)
+
+
+def save_user(user):
+    users = load_users()
+
+    users.append({
         "name": user.name,
         "email": user.email
-    }
-
-    try:
-        with open(FILE_PATH, "r", encoding="utf-8") as file:
-            users = json.load(file)
-    except FileNotFoundError:
-        users = []
-
-    users.append(data)
+    })
 
     with open(FILE_PATH, "w", encoding="utf-8") as file:
         json.dump(users, file, indent=4)

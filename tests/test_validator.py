@@ -8,3 +8,6 @@ def test_email_invalido():
 
 def test_email_vacio():
     assert not is_valid_email("")
+    
+def test_email_con_espacios():
+    assert is_valid_email("  test@email.com  ")
